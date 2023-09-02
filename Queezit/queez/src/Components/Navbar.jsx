@@ -28,13 +28,13 @@ const Navbar = () => {
 					<HiMenuAlt3
 						size={26}
 						color="white"
-						onClick={() => setmenuOpen(!menuOpen)}
+						// onClick={() => setmenuOpen(!menuOpen)}
 					/>
 				) : (
 					<GrClose
 						size={24}
 						color="black"
-						onClick={() => setmenuOpen(!menuOpen)}
+						// onClick={() => setmenuOpen(!menuOpen)}
 					/>
 				)}
 			</div>
@@ -46,7 +46,9 @@ const Navbar = () => {
 				<nav className="mobile flex justify-between items-center flex-col w-[50vw] h-screen bg-slate-100 absolute right-0 top-0 pt-[100px] pb-[150px] z-20">
 					<ul className="mobile-navs flex flex-col gap-[30px] text-[18px] p-5 z-50">
 						{NavLinks.map((e) => (
-							<li className="flex items-center justify-start gap-[30px] border-b-2 pb-3 " key={e.text}>
+							<li
+								className="flex items-center justify-start gap-[30px] border-b-2 pb-3 "
+								key={e.text}>
 								<e.icon size={18} />
 								{e.text}
 							</li>
