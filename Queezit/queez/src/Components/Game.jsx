@@ -7,10 +7,13 @@ const Game = ({ gameLevel }) => {
 	const [remark, setremark] = useState("");
 	function getRemark() {
 		switch (score) {
+			case 0:
+				setremark("Your head is quite empty. It should be used as a cupboard.");
+				break;
 			case 1:
 			case 2:
 			case 3:
-				setremark("You are too Dumb");
+				setremark("Bad news mate! You are too Dumb");
 				break;
 			case 4:
 			case 5:
