@@ -29,7 +29,7 @@ const SelectLevel = () => {
 		},
 	];
 	return (
-		<section className="bg-[var(--primaryBg)] min-h-screen z-30 pb-[40px]">
+		<section className="bg-[var(--primaryBg)] h-screen z-30 pb-[40px] overflow-hidden">
 			<Navbar />
 			<div className="content relative">
 				{/* the top banner */}
@@ -65,8 +65,8 @@ const SelectLevel = () => {
 			</div>
 
 			{/* The infrastructure bg */}
-			<div class="absolute z-0  bottom-0 md:w-[100vw] w-[200vw] right-0 h-[100vh] object-fill overflow-hidden">
-				<img src={bg} alt="bg" />
+			<div class="absolute z-0  bottom-0 top-[1vh] md:top-0 md:w-[100vw] w-[200vw] right-0 h-[100vh] object-fill overflow-y-hidden">
+				<img src={bg} alt="bg" className="h-[100vh]" />
 			</div>
 		</section>
 	);
