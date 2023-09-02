@@ -5,7 +5,7 @@
 :root {
 	--primaryBg: #0e5e6f;
 	--secondBg: #ab0664;
-	--secondary: red;
+	--secondary: #b8f56a;
 	--brownColor: #f8c1a2;
 	--btn: #f2deba;
 	--grey: #454545;
@@ -27,18 +27,18 @@ li:hover {
 	color: var(--brownColor);
 	cursor: pointer;
 }
-.mobile-navs li:hover{
+.mobile-navs li:hover {
 	color: var(--secondBg);
 }
-::-webkit-scrollbar{
+::-webkit-scrollbar {
 	width: 5px;
 }
-::-webkit-scrollbar-track{
+::-webkit-scrollbar-track {
 	width: 1px;
 	/* background-color: #0e5e6f; */
 	border-radius: 100px;
 }
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
 	background-color: #b8f56a;
 	border-radius: 100px;
 }
