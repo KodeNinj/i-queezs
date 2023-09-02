@@ -21,11 +21,11 @@ const SelectLevel = () => {
 		},
 		{
 			image: boss,
-			link: "/PlayEasy",
+			link: "/PlayBoss",
 		},
 		{
 			image: random,
-			link: "/PlayEasy",
+			link: "/PlayRandom",
 		},
 	];
 	return (
@@ -33,17 +33,17 @@ const SelectLevel = () => {
 			<Navbar />
 			<div className="content relative">
 				{/* the top banner */}
-				<div class="my-[20px] w-[96%] mx-[2%] md:h-[40%] h-[25vh] relative rounded-[20px] overflow-hidden z-10">
+				<div className="my-[20px] w-[96%] mx-[2%] md:h-[40%] h-[25vh] relative rounded-[20px] overflow-hidden z-10">
 					<img
 						src={qbg}
 						alt="background"
-						class="h-[100%] w-full object-cover opacity-80"
+						className="h-[100%] w-full object-cover opacity-80"
 					/>
-					<div class="absolute  text-center text-[var(--white)] z-50 sm:h-[20%]  sm:top-[30%] w-[80%] mx-[10%] top-0 h-[50%] mt-[10%] sm:my-0  flex flex-col items-center justify-center">
-						<h2 class="text-lg md:text-3xl font-bold text-white">
+					<div className="absolute  text-center text-[var(--white)] z-50 sm:h-[20%]  sm:top-[30%] w-[80%] mx-[10%] top-0 h-[50%] mt-[10%] sm:my-0  flex flex-col items-center justify-center">
+						<h2 className="text-lg md:text-3xl font-bold text-white">
 							Countries &amp; Capital Quiz
 						</h2>
-						<p class="md:text-lg text-sm mt-2 text-white">
+						<p className="md:text-lg text-sm mt-2 text-white">
 							How vast are you with countries and their capitals?
 						</p>
 					</div>
@@ -52,7 +52,7 @@ const SelectLevel = () => {
 				<div className=" flex items-center justify-center gap-[20px] w-[96vw] mx-[2vw] flex-wrap ">
 					{levels.map((e) => {
 						return (
-							<Link to={e.link} className="flex">
+							<Link to={e.link} className="flex" key={e.link}>
 								<img
 									src={e.image}
 									alt=""
@@ -65,7 +65,7 @@ const SelectLevel = () => {
 			</div>
 
 			{/* The infrastructure bg */}
-			<div class="absolute z-0  bottom-0 top-[1vh] md:top-0 md:w-[100vw] w-[200vw] right-0 h-[100vh] object-fill overflow-y-hidden">
+			<div className="absolute z-0  bottom-0 top-[1vh] md:top-0 md:w-[100vw] w-[200vw] right-0 h-[100vh] object-fill overflow-y-hidden">
 				<img src={bg} alt="bg" className="h-[100vh]" />
 			</div>
 		</section>

@@ -1,0 +1,15 @@
+
+export const CountriesCapitalMediumObj = [
+    {
+        id: 1,
+        name: 'Kuwait',
+        options: ['Nur-Sultan', 'Kutuwenji', 'Kuwaiti', 'Kuwait City'],
+        answer: 'Kuwait City'
+    },
+    {
+        id: 1,
+        name: 'Kuwait',
+        options: ['Nur-Sultan', 'Kutuwenji', 'Kuwaiti', 'Kuwait City'],
+        answer: 'Kuwait City'
+    },
+]
