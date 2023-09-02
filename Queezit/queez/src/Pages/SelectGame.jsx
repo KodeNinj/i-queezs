@@ -1,14 +1,17 @@
 import React from "react";
 import Navbar from "../Components/Navbar";
-import bg from "../Assets/bg.jpg";
+import bg from "../Assets/bg.mp4";
 import { SlGameController } from "react-icons/sl";
 const SelectGame = () => {
 	return (
 		<section>
 			<Navbar />
-			<img
+			<video
 				src={bg}
 				alt="background"
+                muted
+				loop
+				autoPlay
 				className="h-screen w-screen object-cover absolute top-0 left-0 opacity-90 "
 			/>
 			<div className="h-[70vh] w-[90vw] mx-[5vw] sm:w-[60vw] sm:mx-[20vw] mt-[5vh] absolute rounded-sm z-0 flex items-center justify-center">
@@ -37,7 +40,7 @@ const SelectGame = () => {
 						Play Game Now
 					</button>
 				</div>
-				<div className="content-box absolute z-1 bg-white opacity-30 w-full lg:h-[60vh] h-full top-0  rounded-[5px]"></div>
+				<div className="content-box absolute z-1 bg-white opacity-50 w-full lg:h-[60vh] h-full top-0  rounded-[5px]"></div>
 			</div>
 		</section>
 	);
