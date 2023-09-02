@@ -17,7 +17,7 @@ const PlayRandom = () => {
 				/>
 				<Link
 					to="/selectgame"
-					className="p-[12px] md:w-[45%] w-full text-[var(--secondary)] border-[var(--secondary)] border-[2px] block text-center rounded-lg hover:bg-white transition-color duration-[1s] hover:text-[var(--primaryBg)]">
+					className="p-[12px] md:w-[50%] md:mx-[25%] w-full text-[var(--secondary)] border-[var(--secondary)] border-[2px] block text-center rounded-lg hover:bg-white transition-color duration-[1s] hover:text-[var(--primaryBg)]">
 					Change Level
 				</Link>
 			</div>
