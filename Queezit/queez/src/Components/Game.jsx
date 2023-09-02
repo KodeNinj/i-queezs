@@ -4,6 +4,33 @@ import { Link } from "react-router-dom";
 const Game = ({ gameLevel }) => {
 	const [index, setindex] = useState(1);
 	const [score, setscore] = useState(0);
+	const [remark, setremark] = useState("");
+	function getRemark() {
+		switch (score) {
+			case 1:
+			case 2:
+			case 3:
+				setremark("You are too Dumb");
+				break;
+			case 4:
+			case 5:
+			case 6:
+				setremark("You tried, but you need to improve");
+				break;
+			case 7:
+			case 8:
+			case 9:
+				setremark("You are smart. Keep it up");
+				break;
+			case 10:
+				setremark("You are on fire! Try another level");
+				break;
+			default:
+				setremark("");
+				break;
+		}
+	}
+
 	return index <= 10 ? (
 		<div className="questionBox w-[80%] mx-[10%]  bg-[var(--secondbg)] rounded-xl p-[30px] mt-[30px] py-[100px]">
 			{gameLevel
@@ -33,6 +60,7 @@ const Game = ({ gameLevel }) => {
 													? setscore(score + 1)
 													: setscore(score);
 												setindex(index + 1);
+												getRemark();
 											}}>
 											{option}
 										</button>
@@ -52,6 +80,7 @@ const Game = ({ gameLevel }) => {
 		</div>
 	) : (
 		// this cater for when the index is now 11. It shows the score page
+
 		<div className="scorepage md:w-[50vw] w-[80vw] h-[70vh] md:mx-[25vw] mx-[10vw] bg-[var(--secondbg)] rounded-md p-[10px]">
 			<div className="result text-center h-[50%] outline-dashed outline-[var(--secondary)] rounded-t-lg p-[20px] flex flex-col items-center justify-center">
 				<h2 className="text-xl text-[var(--secondary)] font-bold">
@@ -62,9 +91,7 @@ const Game = ({ gameLevel }) => {
 				</h2>
 				<h2 className="text-md font-bold mt-[20px] text-[var(--secondary)]">
 					Remark <br />{" "}
-					<span className="text-lg text-white font-normal">
-						You are so dumb
-					</span>
+					<span className="text-lg text-white font-normal">{remark}</span>
 				</h2>
 			</div>
 			{/* The Button group */}
