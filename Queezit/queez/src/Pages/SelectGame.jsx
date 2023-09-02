@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../Components/Navbar";
 import bg from "../Assets/bg.mp4";
+import { Link } from "react-router-dom";
 import { SlGameController } from "react-icons/sl";
 const SelectGame = () => {
 	return (
@@ -9,7 +10,7 @@ const SelectGame = () => {
 			<video
 				src={bg}
 				alt="background"
-                muted
+				muted
 				loop
 				autoPlay
 				className="h-screen w-screen object-cover absolute top-0 left-0 opacity-90 "
@@ -34,11 +35,13 @@ const SelectGame = () => {
 						cum delectus, facere ipsa sed aperiam aut dolore tempora neque rem
 						in nulla laborum, voluptatibus qui eum aspernatur.
 					</p>
-					<button className="w-[90%] sm:w-[40%] sm:mx-[30%] mx-[5%] mt-[20px] bg-[var(--brownColor)] py-[15px] rounded-full  flex items-center text-black justify-center gap-3">
+					<Link
+						className="w-[90%] sm:w-[40%] sm:mx-[30%] mx-[5%] mt-[20px] bg-[var(--brownColor)] py-[15px] rounded-full  flex items-center text-black justify-center gap-3"
+						to="/selectgame">
 						{" "}
 						<SlGameController />
 						Play Game Now
-					</button>
+					</Link>
 				</div>
 				<div className="content-box absolute z-1 bg-white opacity-50 w-full lg:h-[60vh] h-full top-0  rounded-[5px]"></div>
 			</div>

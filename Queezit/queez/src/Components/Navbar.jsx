@@ -4,6 +4,7 @@ import { AiOutlineStar } from "react-icons/ai";
 import { GrClose } from "react-icons/gr";
 import NavList from "./NavList";
 import NavLinks from "../Data/NavLinks";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
 	const [menuOpen, setmenuOpen] = useState(false);
@@ -12,9 +13,9 @@ const Navbar = () => {
 		<nav className="flex justify-between items-center sm:px-[40px] px-[20px] z-100">
 			{/* This is where the logo is */}
 			<div className="logo_col py-5 z-30">
-				<p className="text-[24px] font-bold text-[var(--secondary)]">
+				<Link className="text-[24px] font-bold text-[var(--secondary)]" to="/">
 					i<span className="text-[var(--brownColor)]">Queez</span>
-				</p>
+				</Link>
 			</div>
 			{/* The navigation links */}
 			<div className="links sm:block hidden z-30 text-white">
