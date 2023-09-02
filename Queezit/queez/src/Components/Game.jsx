@@ -4,7 +4,8 @@ import { Link } from "react-router-dom";
 const Game = ({ gameLevel }) => {
 	const [index, setindex] = useState(1);
 	const [score, setscore] = useState(0);
-    return index <= 10 ? <div className="questionBox w-[80%] mx-[10%] h-[80vh] bg-[var(--secondbg)] mt-[20px] rounded-xl p-[30px]">
+	return index <= 10 ? (
+		<div className="questionBox w-[80%] mx-[10%]  bg-[var(--secondbg)] rounded-xl p-[30px] mt-[30px] py-[100px]">
 			{gameLevel
 				.filter((item) => item.id === index)
 				.map((e) => {
@@ -12,8 +13,8 @@ const Game = ({ gameLevel }) => {
 						<div key={e.id}>
 							{/* the question section */}
 							<div className=" text-xl text-white text-bold flex flex-col items-center justify-center gap-[10px] md:gap-[30px]">
-								<p className=" rounded-full  text-center flex items-center justify-center text-2xl">
-									{index}/10
+								<p className=" rounded-full  text-center flex items-center justify-center text-2xl ">
+									{index}/10 ===== {e.level} Level
 								</p>
 								<p className="md:text-3xl text-xl md:text-left text-center text-[var(--secondary)]">
 									What is the capital of {e.name}
@@ -22,24 +23,34 @@ const Game = ({ gameLevel }) => {
 							{/* the option section */}
 							<div className="option flex flex-wrap gap-[20px] mt-[10%] justify-center items-center md:flex-row flex-col text-white">
 								{e.options.map((option) => (
-									<button
-										key={option}
-										className="p-[20px] border-[2px] border-[var(--white)] w-full md:w-[15vw] gap-[20px] rounded-lg"
-										onClick={() => {
-											option === e.answer
-												? setscore(score + 1)
-												: setscore(score);
-											setindex(index + 1);
-										}}>
-										{option}
-									</button>
+									<>
+										{" "}
+										<button
+											key={option}
+											className="p-[20px] border-[2px] border-[var(--white)] w-full md:w-[15vw] gap-[20px] rounded-lg"
+											onClick={() => {
+												option === e.answer
+													? setscore(score + 1)
+													: setscore(score);
+												setindex(index + 1);
+											}}>
+											{option}
+										</button>
+									</>
 								))}
+								<button
+									className="p-[10px] border-[2px] border-[var(--white)] w-full md:w-[15vw] gap-[20px] rounded-lg bg-red-500"
+									onClick={() => {
+										setindex(11);
+									}}>
+									Give Up
+								</button>
 							</div>
 						</div>
 					);
 				})}
 		</div>
-	: (
+	) : (
 		// this cater for when the index is now 11. It shows the score page
 		<div className="scorepage md:w-[50vw] w-[80vw] h-[70vh] md:mx-[25vw] mx-[10vw] bg-[var(--secondbg)] rounded-md p-[10px]">
 			<div className="result text-center h-[50%] outline-dashed outline-[var(--secondary)] rounded-t-lg p-[20px] flex flex-col items-center justify-center">
@@ -77,12 +88,7 @@ const Game = ({ gameLevel }) => {
 				</Link>
 			</div>
 		</div>
-	)
-
-            // end of line
-        }
-    
-
-
+	);
+};
 
 export default Game;

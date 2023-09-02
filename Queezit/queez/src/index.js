@@ -7,6 +7,7 @@ import SelectGame from "./Pages/SelectGame";
 import SelectLevel from "./Pages/SelectLevel";
 import PlayEasy from "./Pages/PlayEasy";
 import PlayTeen from "./Pages/PlayTeen";
+import PlayBoss from "./Pages/PlayBoss";
 
 const router = createBrowserRouter([
 	{
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
 	{
 		path: "/playteen",
 		element: <PlayTeen />,
+	},
+	{
+		path: "/playboss",
+		element: <PlayBoss />,
 	},
 ]);
 const root = ReactDOM.createRoot(document.getElementById("root"));

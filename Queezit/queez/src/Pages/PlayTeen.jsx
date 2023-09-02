@@ -4,7 +4,7 @@ import { CountriesCapitalMediumObj } from "../Data/CountriesCapitalMediumObj";
 import Game from "../Components/Game";
 const PlayEasy = () => {
 	return (
-		<section className="bg-[var(--primaryBg)] h-screen z-30 pb-[40px] overflow-hidden">
+		<section className="bg-[var(--primaryBg)] min-h-screen z-30 pb-[40px] overflow-auto">
 			<Navbar />
 			<Game gameLevel={CountriesCapitalMediumObj} />
 		</section>
