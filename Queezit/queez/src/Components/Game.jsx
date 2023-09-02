@@ -4,7 +4,9 @@ import { Link } from "react-router-dom";
 const Game = ({ gameLevel }) => {
 	const [index, setindex] = useState(1);
 	const [score, setscore] = useState(0);
-	const [remark, setremark] = useState("");
+	const [remark, setremark] = useState(
+		"Giving up is okay. But doing that without even trying first? That's a dick move!"
+	);
 	function getRemark() {
 		switch (score) {
 			case 0:
