@@ -20,20 +20,19 @@ const SelectGame = () => {
 					<h4 className="text-yellow-300 text-center mt-[20px] text-[24px]">
 						How to play
 					</h4>
-					<p className="text-center mt-[20px] mb-[30px]">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum,
-						debitis blanditiis quis quasi, alias ullam distinctio cumque enim,
-						quaerat est voluptatum expedita vitae odio natus obcaecati unde cum
-						atque. Sint omnis recusandae, ex perferendis corporis mollitia
-						ratione sequi voluptatibus a nemo temporibus fuga. Nulla placeat
-						ipsa laboriosam sit inventore quos enim veritatis, aperiam dolorem
-						nam ullam eveniet incidunt maxime rerum sed fuga nisi numquam porro
-						vel nesciunt earum corrupti, exercitationem modi dolor. Voluptatem
-						doloribus iste eum facere, placeat itaque libero hic error minus
-						amet inventore in numquam ut distinctio consequatur voluptatibus
-						reiciendis id minima vitae quam natus nemo. Quos dolor alias nemo
-						cum delectus, facere ipsa sed aperiam aut dolore tempora neque rem
-						in nulla laborum, voluptatibus qui eum aspernatur.
+					<p className="text-center mt-[20px] mb-[30px] p-[20px]">
+						This is a very simple quiz game. The game tests your knowledge about
+						the capitals of various countries. The countries spans across
+						different region and continent such as Africa, North America, Asia,
+						South America, Australia and Oceania, etc. <br />
+						<br />
+						You have four game level to select from. The Baby level is the
+						easiest while Boss level is the hardest. The random Level as the
+						name implies is a mix of the three levels. And the questions are
+						more than the regular 10 questions in the first three levels. <br />
+						<br />
+						To play the game, select one of the four options to the question.
+						After the last question (10), you will be able to see your score.
 					</p>
 					<Link
 						className="w-[90%] sm:w-[40%] sm:mx-[30%] mx-[5%] mt-[20px] bg-[var(--brownColor)] py-[15px] rounded-full  flex items-center text-black justify-center gap-3"
