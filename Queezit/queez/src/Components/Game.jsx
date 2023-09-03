@@ -37,7 +37,7 @@ const Game = ({ gameLevel }) => {
 	}
 
 	return index <= 10 ? (
-		<div className="questionBox w-[80%] mx-[10%]  bg-[var(--secondbg)] rounded-xl p-[30px] mt-[30px] py-[100px]">
+		<div className="questionBox w-[80%] mx-[10%]  bg-[var(--secondbg)] rounded-xl p-[30px] mt-[30px] py-[100px] z-30 absolute">
 			{gameLevel
 				.filter((item) => item.id === index)
 				.map((e) => {
@@ -53,7 +53,7 @@ const Game = ({ gameLevel }) => {
 								</p>
 							</div>
 							{/* the option section */}
-							<div className="option flex flex-wrap gap-[20px] mt-[10%] justify-center items-center md:flex-row flex-col text-white">
+							<div className="option flex flex-wrap gap-[20px] mt-[10%]  md:mt-[40px] justify-center items-center md:flex-row flex-col  text-white">
 								{e.options.map((option) => (
 									<>
 										{" "}
@@ -86,7 +86,7 @@ const Game = ({ gameLevel }) => {
 	) : (
 		// this cater for when the index is now 11. It shows the score page
 
-		<div className="scorepage md:w-[50vw] w-[80vw] h-[70vh] md:mx-[25vw] mx-[10vw] bg-[var(--secondbg)] rounded-md p-[10px]">
+		<div className="scorepage md:w-[50vw] w-[80vw] h-[70vh] md:mx-[25vw] mx-[10vw] bg-[var(--secondbg)] rounded-md p-[10px] absolute z-10">
 			<div className="result text-center h-[50%] outline-dashed outline-[var(--secondary)] rounded-t-lg p-[20px] flex flex-col items-center justify-center">
 				<h2 className="text-xl text-[var(--secondary)] font-bold">
 					Your score <br />{" "}
