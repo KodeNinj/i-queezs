@@ -105,6 +105,9 @@ const Game = ({ gameLevel }) => {
 					onClick={() => {
 						setindex(1);
 						setscore(0);
+						setremark(
+							"Giving up is okay. But doing that without even trying first? That's a dick move!"
+						);
 					}}
 					className="p-[12px] md:w-[45%] w-full bg-[var(--secondary)] rounded-lg hover:bg-[var(--brownColor)] transition-color duration-[1s]">
 					Retry

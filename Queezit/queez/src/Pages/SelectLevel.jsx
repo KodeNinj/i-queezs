@@ -65,7 +65,7 @@ const SelectLevel = () => {
 			</div>
 
 			{/* The infrastructure bg */}
-			<div className="absolute z-0  bottom-0 top-[1vh] md:top-0 md:w-[100vw] w-[200vw] right-0 h-[100vh] object-fill overflow-y-hidden">
+			<div className="absolute z-0   top-[1vh] md:top-0 md:w-[100vw] w-[200vw] right-0 h-[100vh] object-fill overflow-y-hidden">
 				<img src={bg} alt="bg" className="h-[100vh]" />
 			</div>
 		</section>
