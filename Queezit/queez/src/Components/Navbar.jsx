@@ -14,7 +14,7 @@ const Navbar = () => {
 			{/* This is where the logo is */}
 			<div className="logo_col py-5 z-30">
 				<Link className="text-[24px] font-bold text-[var(--secondary)]" to="/">
-					i<span className="text-[var(--brownColor)]">Queez</span>
+					i<span className="text-white">Queez</span>
 				</Link>
 			</div>
 			{/* The navigation links */}

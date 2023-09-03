@@ -17,7 +17,7 @@ const SelectGame = () => {
 			/>
 			<div className="h-[70vh] w-[90vw] mx-[5vw] sm:w-[60vw] sm:mx-[20vw] mt-[5vh] absolute rounded-sm z-0 flex items-center justify-center">
 				<div className="h-[70vh] w-full text-black block absolute z-10 overflow-y-scroll overflow-x-hidden pb-[30px]">
-					<h4 className="text-yellow-300 text-center mt-[20px] text-[24px]">
+					<h4 className="text-[var(--secondary)] text-center mt-[20px] text-[24px] font-extrabold">
 						How to play
 					</h4>
 					<p className="text-center mt-[20px] mb-[30px] p-[20px]">
@@ -35,7 +35,7 @@ const SelectGame = () => {
 						After the last question (10), you will be able to see your score.
 					</p>
 					<Link
-						className="w-[90%] sm:w-[40%] sm:mx-[30%] mx-[5%] mt-[20px] bg-[var(--brownColor)] py-[15px] rounded-full  flex items-center text-black justify-center gap-3"
+						className="w-[90%] sm:w-[40%] sm:mx-[30%] mx-[5%] mt-[20px] bg-[var(--secondary)] py-[15px] rounded-full  flex items-center text-black justify-center gap-3"
 						to="/selectgame">
 						{" "}
 						<SlGameController />
