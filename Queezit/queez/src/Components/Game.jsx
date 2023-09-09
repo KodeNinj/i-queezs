@@ -55,7 +55,7 @@ const Game = ({ gameLevel }) => {
 	}
 
 	return index <= 10 ? (
-		<div className="questionBox w-[80%] mx-[10%]  bg-[var(--secondbg)] rounded-xl p-[30px] mt-[30px] py-[100px] z-30 absolute">
+		<div className="questionBox w-[80%] mx-[10%]  bg-[var(--secondbg)] rounded-xl p-[30px] mt-[30px] py-[100px] z-30 absolute ">
 			{gameLevel
 				.filter((item) => item.id === index)
 				.map((e) => {
@@ -97,7 +97,7 @@ const Game = ({ gameLevel }) => {
 									</>
 								))}
 								<button
-									className="p-[10px] border-[2px] border-[var(--white)] w-full md:w-[15vw] gap-[20px] rounded-lg bg-red-500"
+									className="p-[10px] border-[2px] border-[var(--white)] w-full md:w-[15vw] gap-[20px] rounded-lg bg-red-500 md:mt-[100px] mt-[30px]"
 									onClick={() => {
 										setindex(11);
 									}}>
