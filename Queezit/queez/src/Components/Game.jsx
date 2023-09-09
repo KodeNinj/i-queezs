@@ -73,11 +73,11 @@ const Game = ({ gameLevel }) => {
 							{/* the option section */}
 							<div className="option flex flex-wrap gap-[20px] mt-[10%]  md:mt-[40px] justify-center items-center md:flex-row flex-col  text-white">
 								{e.options.map((option) => (
-									<>
+									<div key={option}>
 										{" "}
 										<button
 											key={option}
-											className="p-[20px] border-[2px] border-[var(--white)] w-full md:w-[15vw] gap-[20px] rounded-lg"
+											className="p-[20px] border-[2px] border-[var(--white)] min-w-[60vw] md:min-w-[15vw] gap-[20px] rounded-lg"
 											onClick={(h) => {
 												if (option === e.answer) {
 													setscore((prevScore) => prevScore + 1);
@@ -94,7 +94,7 @@ const Game = ({ gameLevel }) => {
 											}}>
 											{option}
 										</button>
-									</>
+									</div>
 								))}
 								<button
 									className="p-[10px] border-[2px] border-[var(--white)] w-full md:w-[15vw] gap-[20px] rounded-lg bg-red-500 md:mt-[100px] mt-[30px]"
