@@ -3,7 +3,9 @@ import Navbar from "../Components/Navbar";
 import { CountriesCapitalEasyObj } from "../Data/CountriesCapitalObj";
 import Game from "../Components/Game";
 import bg from "../Assets/design.png";
+
 const PlayEasy = () => {
+
 	return (
 		<section className="bg-[var(--primaryBg)] min-h-screen z-30 pb-[40px] overflow-auto">
 			<Navbar />
@@ -15,5 +17,4 @@ const PlayEasy = () => {
 		</section>
 	);
 };
-
 export default PlayEasy;

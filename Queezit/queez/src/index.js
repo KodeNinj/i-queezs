@@ -9,6 +9,7 @@ import PlayEasy from "./Pages/PlayEasy";
 import PlayTeen from "./Pages/PlayTeen";
 import PlayBoss from "./Pages/PlayBoss";
 import PlayRandom from "./Pages/PlayRandom";
+import PlayMusic from "./Pages/PlayMusic";
 
 const router = createBrowserRouter([
 	{
@@ -34,6 +35,10 @@ const router = createBrowserRouter([
 	{
 		path: "/PlayRandom",
 		element: <PlayRandom />,
+	},
+	{
+		path: "/music",
+		element: <PlayMusic />,
 	},
 ]);
 const root = ReactDOM.createRoot(document.getElementById("root"));

@@ -7,8 +7,24 @@ const Game = ({ gameLevel }) => {
 	const [remark, setremark] = useState(
 		"Giving up is okay. But doing that without even trying first? That's a dick move!"
 	);
+
+	function shuffle() {
+		for (let i = gameLevel.length - 1; i > 0; i--) {
+			const j = Math.floor(Math.random() * (i + 1));
+			const temp = gameLevel[i];
+			gameLevel[i] = gameLevel[j];
+			gameLevel[j] = temp;
+		}
+	}
+	shuffle();
 	function getRemark() {
 		switch (score) {
+			case "":
+				setscore(0);
+				setremark(
+					"Giving up is okay. But doing that without even trying first? That's a dick move!"
+				);
+				break;
 			case 0:
 				setremark("Your head is quite empty. It should be used as a cupboard.");
 				break;
@@ -31,7 +47,9 @@ const Game = ({ gameLevel }) => {
 				setremark("You are on fire! Try another level");
 				break;
 			default:
-				setremark("");
+				setremark(
+					"Giving up is okay. But doing that without even trying first? That's a dick move!"
+				);
 				break;
 		}
 	}
@@ -60,12 +78,19 @@ const Game = ({ gameLevel }) => {
 										<button
 											key={option}
 											className="p-[20px] border-[2px] border-[var(--white)] w-full md:w-[15vw] gap-[20px] rounded-lg"
-											onClick={() => {
-												option === e.answer
-													? setscore(score + 1)
-													: setscore(score);
-												setindex(index + 1);
-												getRemark();
+											onClick={(h) => {
+												if (option === e.answer) {
+													setscore((prevScore) => prevScore + 1);
+													h.target.style.backgroundColor = "green";
+												} else {
+													setscore(score);
+													h.target.style.backgroundColor = "red";
+													getRemark();
+												}
+
+												setTimeout(() => {
+													setindex((prevIndex) => prevIndex + 1);
+												}, 1000);
 											}}>
 											{option}
 										</button>
