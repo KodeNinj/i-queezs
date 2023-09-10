@@ -67,6 +67,6 @@ export const CountriesCapitalMediumObj = [
 		name: "Somalia",
 		level: "Teen",
 		options: ["Ramallah", "Somalina", "Juba", "Mogadishu"],
-		answer: "Ulaanbaatar",
+		answer: "Mogadishu",
 	},
 ];

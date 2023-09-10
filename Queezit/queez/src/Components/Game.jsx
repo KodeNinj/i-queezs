@@ -82,6 +82,7 @@ const Game = ({ gameLevel }) => {
 												if (option === e.answer) {
 													setscore((prevScore) => prevScore + 1);
 													h.target.style.backgroundColor = "green";
+													getRemark();
 												} else {
 													setscore(score);
 													h.target.style.backgroundColor = "red";
