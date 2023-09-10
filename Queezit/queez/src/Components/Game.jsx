@@ -117,7 +117,7 @@ const Game = ({ gameLevel }) => {
 				<h2 className="text-xl text-[var(--secondary)] font-bold">
 					Your score <br />{" "}
 					<span className="text-3xl text-white font-normal">
-						{score * 10}/100
+						{((score / gameLevel.length) * 100)}%
 					</span>
 				</h2>
 				<h2 className="text-md font-bold mt-[20px] text-[var(--secondary)]">
