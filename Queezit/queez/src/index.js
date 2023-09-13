@@ -10,6 +10,7 @@ import PlayTeen from "./Pages/PlayTeen";
 import PlayBoss from "./Pages/PlayBoss";
 import PlayRandom from "./Pages/PlayRandom";
 import PlayMusic from "./Pages/PlayMusic";
+import Learn from "./Pages/Learn";
 
 const router = createBrowserRouter([
 	{
@@ -39,6 +40,10 @@ const router = createBrowserRouter([
 	{
 		path: "/music",
 		element: <PlayMusic />,
+	},
+	{
+		path: "/learn",
+		element: <Learn />,
 	},
 ]);
 const root = ReactDOM.createRoot(document.getElementById("root"));
