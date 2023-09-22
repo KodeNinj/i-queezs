@@ -106,10 +106,13 @@ const Learn = () => {
 								<div className="flex items-center justify-between mt-[50px] flex-wrap flex-col lg:flex-row ">
 									{/* BOX 1 */}
 									<div className="otherinfo lg:w-[30%] w-full mb-[20px] h-[300px] bg-[var(--box)] rounded-lg">
+										<h3 className="text-center text-xl font-bold py-[20px] text-[var(--secondary)]">
+											Coat Of Arm
+										</h3>
 										<img
 											src={item.coatOfArms.svg}
 											alt=""
-											className="w-[70%] mx-[15%] h-full object-fill"
+											className="w-[80%] mx-[10%]  object-fill"
 										/>
 									</div>
 									{/* BOX 2 */}
