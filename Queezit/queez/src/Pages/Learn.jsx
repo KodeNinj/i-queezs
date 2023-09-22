@@ -107,7 +107,7 @@ const Learn = () => {
 									{/* BOX 1 */}
 									<div className="otherinfo lg:w-[30%] w-full mb-[20px] h-[300px] bg-[var(--box)] rounded-lg">
 										<div className="w-full h-full overflow-hidden">
-											<h3 className="text-center text-xl font-bold pt-[20px] pb-[5px] text-[var(--secondary)]">
+											<h3 className="text-center text-xl font-bold pt-[10px] pb-[5px] text-[var(--secondary)]">
 												Coat Of Arm
 											</h3>
 											<img
