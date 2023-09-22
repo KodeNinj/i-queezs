@@ -113,7 +113,7 @@ const Learn = () => {
 											<img
 												src={item.coatOfArms.svg}
 												alt=""
-												className="w-[80%] mx-[10%]  object-cover"
+												className="max-w-[75%] mx-[12.5%]  object-cover"
 											/>
 										</div>
 									</div>
