@@ -30,7 +30,7 @@ const Learn = () => {
 		<section className="bg-[var(--primaryBg)] min-h-screen ">
 			<Navbar />
 			{/* the middle box where the main content is */}
-			<div className="questionBox w-[90%] mx-[5%]  bg-[var(--secondbg)] rounded-xl p-[30px] lg:mt-[30px] mt-[10px] z-30 absolute h-[80vh] overflow-scroll	">
+			<div className="questionBox w-[90%] mx-[5%]  bg-[var(--secondbg)] rounded-xl p-[30px] lg:mt-[30px] mt-[10px] z-10 absolute h-[80vh] overflow-scroll	">
 				{countryDB
 					.filter((country) => country.name.common === countryName)
 					.map((item) => {
