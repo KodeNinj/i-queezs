@@ -168,7 +168,7 @@ const Learn = () => {
 										<p className="flex flex-col items-center justify-between	 border-b-[1px] border-white py-[10px] text-[var(--secondary)] font-bold text-center">
 											Time Zone{" "}
 											<span className="text-white font-normal">
-												{item.timezones}
+												{item.timezones[0]}
 											</span>
 										</p>
 										{/* GET THE TIME ZONE */}
