@@ -110,11 +110,13 @@ const Learn = () => {
 											<h3 className="text-center text-xl font-bold pt-[10px] pb-[5px] text-[var(--secondary)]">
 												Coat Of Arm
 											</h3>
-											<img
-												src={item.coatOfArms.svg}
-												alt=""
-												className="max-w-[75%] mx-[12.5%]  object-cover"
-											/>
+											<div className="w-full  flex justify-center items-center">
+												<img
+													src={item.coatOfArms.svg}
+													alt=""
+													className="w-[200px] h-[250px] text-center  object-fill"
+												/>
+											</div>
 										</div>
 									</div>
 									{/* BOX 2 */}
