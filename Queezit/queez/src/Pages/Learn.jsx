@@ -145,9 +145,9 @@ const Learn = () => {
 									</p>
 									{/* region*/}
 									<p className="flex flex-col items-center justify-between border-b-[1px] border-white pr-5 py-[10px] text-[var(--secondary)] font-bold w-full text-center">
-										Region{" "}
+										Continent{" "}
 										<span className="text-white font-normal">
-											{item.region}
+											{item.continents}
 										</span>
 									</p>
 									{/* Currency */}

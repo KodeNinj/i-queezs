@@ -8,41 +8,31 @@ const tempData = [
 			},
 		},
 		errorMsg: "Enter a valid country name",
-		tld: [".ng"],
-		cca2: "NG",
-		ccn3: "566",
-		cca3: "NGA",
-		cioc: "NGR",
+		cca3: "Invalid",
 
-		currencies: { NGN: { name: "Nigerian naira", symbol: "₦" } },
-		idd: { root: "+2", suffixes: ["34"] },
-		capital: ["Abuja"],
+		currencies: { NGN: { name: "XXXXXXXXX", symbol: "₦" } },
+		idd: { root: "+x", suffixes: ["xx"] },
+		capital: ["Invalid"],
 
-		region: "Africa",
+		region: "Somewhere",
 		subregion: "Western Africa",
 
 		demonyms: {
-			eng: { f: "Nigerian", m: "Nigerian" },
-			fra: { f: "Nigériane", m: "Nigérian" },
+			eng: { f: "Alien", m: "Alien" },
 		},
 
-	
-		population: 206139587,
-
-		fifa: "NGA",
-		car: { signs: ["WAN"], side: "right" },
-		timezones: ["UTC+01:00"],
-		continents: ["Africa"],
+		population: "xxxxxxx",
+		car: { side: "xxxxx" },
+		timezones: ["xxxxxx"],
+		continents: ["Somewhere"],
 		flags: {
-			png: "https://flagcdn.com/w320/ng.png",
-			svg: "https://flagcdn.com/ng.svg",
+			png: "https://cdn.pixabay.com/photo/2020/09/22/14/55/sad-emoji-5593352_640.png",
 			alt: "The flag of Nigeria is composed of three equal vertical bands of green, white and green.",
 		},
 		coatOfArms: {
-			png: "https://mainfacts.com/media/images/coats_of_arms/ng.png",
-			svg: "https://mainfacts.com/media/images/coats_of_arms/ng.svg",
+			svg: "https://www.pngmart.com/files/23/Emoji-Faces-PNG.png",
 		},
-		startOfWeek: "monday",
+		startOfWeek: "xxxxxxx",
 	},
 ];
 export default tempData;
