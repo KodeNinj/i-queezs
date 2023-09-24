@@ -20,6 +20,7 @@ const Learn = () => {
 	// useEffect for name adjustment
 	useEffect(() => {
 		let wordArr = countryName;
+
 		wordArr = countryName.split(" ");
 		for (let i = 0; i < wordArr.length; i++) {
 			wordArr[i] = wordArr[i].charAt(0).toUpperCase() + wordArr[i].slice(1);
@@ -46,9 +47,9 @@ const Learn = () => {
 			{/* the middle box where the main content is */}
 			<div className="questionBox w-[90%] mx-[5%]  bg-[var(--secondbg)] rounded-xl p-[30px] lg:mt-[30px] mt-[10px] z-10 absolute h-[80vh] overflow-scroll	">
 				{countryfilter.map((item) => {
+					// convert some multi level object to an array
 					let currencyArray = Object.values(item.currencies);
 					let denonymArray = Object.values(item.demonyms);
-
 					let currency = currencyArray[0].name;
 					let Indigine = denonymArray[0];
 					// the major display. This is where the whole th
@@ -95,7 +96,7 @@ const Learn = () => {
 											className="p-[14px] outline-none border-none lg:w-[60%] md:w-[50%] w-full lg:mb-0 mb-[10px] text-black rounded-sm"
 											type="text"
 											onChange={(e) => {
-												values = e.target.value;
+												values = e.target.value.toLowerCase();
 												settempcontryName(values);
 											}}
 											value={tempcontryName}
