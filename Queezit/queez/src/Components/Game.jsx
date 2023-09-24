@@ -8,15 +8,20 @@ const Game = ({ gameLevel }) => {
 		"Giving up is okay. But doing that without even trying first? That's a dick move!"
 	);
 
+	let levels = gameLevel;
+
 	function shuffle() {
-		for (let i = gameLevel.length - 1; i > 0; i--) {
+		for (let i = 0; i <= levels.length - 1; i++) {
 			const j = Math.floor(Math.random() * (i + 1));
-			const temp = gameLevel[i];
-			gameLevel[i] = gameLevel[j];
-			gameLevel[j] = temp;
+			const temp = levels[i];
+
+			levels[i] = levels[j];
+			temp.id = i;
+			levels[j] = temp;
+
 		}
 	}
-	shuffle();
+
 	function getRemark() {
 		switch (score) {
 			case "":
@@ -54,9 +59,9 @@ const Game = ({ gameLevel }) => {
 		}
 	}
 
-	return index <= 10 ? (
-		<div className="questionBox w-[90%] mx-[5%]  bg-[var(--secondbg)] rounded-xl p-[30px] lg:mt-[30px] mt-[10px] z-10 absolute h-[80vh] overflow-scroll	 ">
-			{gameLevel
+	return index <= 9 ? (
+		<div className="questionBox w-[80%] mx-[10%]  bg-[var(--secondbg)] rounded-xl p-[30px] mt-[30px] py-[100px] z-30 absolute ">
+			{levels
 				.filter((item) => item.id === index)
 				.map((e) => {
 					return (
@@ -101,6 +106,7 @@ const Game = ({ gameLevel }) => {
 									className="p-[10px] border-[2px] border-[var(--white)] w-full md:w-[15vw] gap-[20px] rounded-lg bg-red-500 md:mt-[100px] mt-[30px]"
 									onClick={() => {
 										setindex(11);
+										shuffle();
 									}}>
 									Give Up
 								</button>
@@ -134,6 +140,9 @@ const Game = ({ gameLevel }) => {
 						setremark(
 							"Giving up is okay. But doing that without even trying first? That's a dick move!"
 						);
+						
+						shuffle();
+						
 					}}
 					className="p-[12px] md:w-[45%] w-full bg-[var(--secondary)] rounded-lg hover:bg-[var(--brownColor)] transition-color duration-[1s]">
 					Retry
