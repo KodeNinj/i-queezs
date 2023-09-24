@@ -3,6 +3,7 @@ import Navbar from "../Components/Navbar";
 import bg from "../Assets/bg.mp4";
 import { Link } from "react-router-dom";
 import { SlGameController } from "react-icons/sl";
+import { FiBook } from "react-icons/fi";
 const SelectGame = () => {
 	return (
 		<section>
@@ -46,7 +47,7 @@ const SelectGame = () => {
 							className="md:w-[40%] w-[90%] mt-[20px] border-[3px] border-[var(--secondary)] py-[15px] rounded-full  flex items-center text-[var(--secondary)] justify-center gap-3"
 							to="/learn">
 							{" "}
-							<SlGameController />
+							<FiBook />
 							Learn About Countries
 						</Link>
 					</div>
