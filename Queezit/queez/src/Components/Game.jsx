@@ -55,7 +55,7 @@ const Game = ({ gameLevel }) => {
 	}
 
 	return index <= 10 ? (
-		<div className="questionBox w-[80%] mx-[10%]  bg-[var(--secondbg)] rounded-xl p-[30px] mt-[30px] py-[100px] z-30 absolute ">
+		<div className="questionBox w-[90%] mx-[5%]  bg-[var(--secondbg)] rounded-xl p-[30px] lg:mt-[30px] mt-[10px] z-10 absolute h-[80vh] overflow-scroll	 ">
 			{gameLevel
 				.filter((item) => item.id === index)
 				.map((e) => {
