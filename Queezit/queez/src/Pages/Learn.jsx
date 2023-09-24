@@ -50,6 +50,7 @@ const Learn = () => {
 					// convert some multi level object to an array
 					let currencyArray = Object.values(item.currencies);
 					let denonymArray = Object.values(item.demonyms);
+					let language = Object.values(item.languages);
 					let currency = currencyArray[0].name;
 					let Indigine = denonymArray[0];
 					// the major display. This is where the whole th
@@ -165,10 +166,8 @@ const Learn = () => {
 								<div className="geography lg:w-[30%] w-full mb-[20px] h-[300px] bg-[var(--box)] rounded-lg p-5 flex flex-col">
 									{/* GET THE CONTINENT */}
 									<p className="flex flex-col items-center justify-between	 border-b-[1px] border-white py-[10px] text-[var(--secondary)] font-bold text-center">
-										Car Side
-										<span className="text-white font-normal">
-											{item.car.side}
-										</span>
+										Official Languge
+										<span className="text-white font-normal">{language}</span>
 									</p>
 									{/* GET THE POPULATION */}
 									<p className="flex flex-col items-center justify-between	 border-b-[1px] border-white py-[10px] text-[var(--secondary)] font-bold text-center">

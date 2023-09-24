@@ -25,6 +25,7 @@ const tempData = [
 		car: { side: "xxxxx" },
 		timezones: ["xxxxxx"],
 		continents: ["Somewhere"],
+		languages: { spa: "Klingon" },
 		flags: {
 			png: "https://cdn.pixabay.com/photo/2020/09/22/14/55/sad-emoji-5593352_640.png",
 			alt: "The flag of Nigeria is composed of three equal vertical bands of green, white and green.",
