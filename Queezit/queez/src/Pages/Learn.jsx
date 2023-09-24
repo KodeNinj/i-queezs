@@ -62,7 +62,7 @@ const Learn = () => {
 									<img
 										src={item.flags.png}
 										alt=""
-										className="lg:w-[150px] w-[300px] h-[250px] object-fill text-center"
+										className="lg:w-[150px] lg:h-[150px] w-[300px] h-[250px] object-fill text-center"
 									/>
 
 									<div className="sideinfo flex flex-col gap-3">
