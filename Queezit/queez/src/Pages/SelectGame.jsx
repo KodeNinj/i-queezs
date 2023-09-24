@@ -34,13 +34,22 @@ const SelectGame = () => {
 						To play the game, select one of the four options to the question.
 						After the last question (10), you will be able to see your score.
 					</p>
-					<Link
-						className="w-[90%] sm:w-[40%] sm:mx-[30%] mx-[5%] mt-[20px] bg-[var(--secondary)] py-[15px] rounded-full  flex items-center text-black justify-center gap-3"
-						to="/selectgame">
-						{" "}
-						<SlGameController />
-						Play Game Now
-					</Link>
+					<div className="btn flex justify-center items-center  gap-[5%]">
+						<Link
+							className="w-[40%] mt-[20px] bg-[var(--secondary)] py-[15px] rounded-full  flex items-center text-black justify-center gap-3"
+							to="/selectgame">
+							{" "}
+							<SlGameController />
+							Play Game Now
+						</Link>
+						<Link
+							className="w-[40%] mt-[20px] border-[3px] border-[var(--secondary)] py-[15px] rounded-full  flex items-center text-[var(--secondary)] justify-center gap-3"
+							to="/learn">
+							{" "}
+							<SlGameController />
+							Learn About Countries
+						</Link>
+					</div>
 				</div>
 				<div className="content-box absolute z-1 bg-white opacity-50 w-full lg:h-[60vh] h-full top-0  rounded-[5px]"></div>
 			</div>

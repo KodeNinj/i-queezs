@@ -26,6 +26,7 @@ const iconsList = [
 	{
 		text: "Quit",
 		icon: BsDoorClosed,
+		link: "/",
 	},
 ];
 
