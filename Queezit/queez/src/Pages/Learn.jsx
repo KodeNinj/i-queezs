@@ -6,7 +6,7 @@ import tempData from "../Data/Tempdata.js";
 const Learn = () => {
 	const [countryDB, setcountryDB] = useState([]);
 	const [countryName, setcountryName] = useState("nigeria");
-	const [tempcontryName, settempcontryName] = useState("nigeria");
+	const [tempcontryName, settempcontryName] = useState("");
 	let values = "";
 
 	// get the data using the API
