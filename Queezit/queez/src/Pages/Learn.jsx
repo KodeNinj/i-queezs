@@ -58,7 +58,7 @@ const Learn = () => {
 					let commaPopulation = population.toLocaleString("en-US");
 
 					return (
-						<section className=" ">
+						<section className=" " key={item.name.common}>
 							<div className="topside flex flex-col-reverse lg:flex-row md:justify-left justify-center w-full">
 								<div className="countryInfo flex lg:flex-row flex-col items-center 	 justify-left gap-5 lg:w-[50%] lg:mt-0 mt-[10%]">
 									<img
