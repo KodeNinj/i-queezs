@@ -100,7 +100,6 @@ const Learn = () => {
 												settempcontryName(values);
 											}}
 											value={tempcontryName}
-											autoFocus
 											placeholder="Type a country name"
 										/>
 										<button
