@@ -20,7 +20,6 @@ const Learn = () => {
 	// useEffect for name adjustment
 	useEffect(() => {
 		let wordArr = countryName;
-
 		wordArr = countryName.split(" ");
 		for (let i = 0; i < wordArr.length; i++) {
 			wordArr[i] = wordArr[i].charAt(0).toUpperCase() + wordArr[i].slice(1);
@@ -33,11 +32,12 @@ const Learn = () => {
 	function setName(e) {
 		setcountryName(e);
 	}
+	// handle situation when wrong contry name is typed
 	let countryfilter = countryDB.filter(
 		(country) => country.name.common === countryName
 	);
 	if (countryfilter.length === 0) {
-		// if user enter invalid country name; use a preset data
+		// set the data to a predefined  default array of object
 		countryfilter = tempData;
 	}
 	return (
@@ -60,7 +60,9 @@ const Learn = () => {
 					return (
 						<section className=" " key={item.name.common}>
 							<div className="topside flex flex-col-reverse lg:flex-row md:justify-left justify-center w-full">
+								{/* top navigation with the search box */}
 								<div className="countryInfo flex lg:flex-row flex-col items-center 	 justify-left gap-5 lg:w-[50%] lg:mt-0 mt-[10%]">
+									{/* the flag */}
 									<img
 										src={item.flags.png}
 										alt=""
