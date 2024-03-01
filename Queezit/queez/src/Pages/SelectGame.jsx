@@ -4,9 +4,14 @@ import bg from "../Assets/bg.mp4";
 import { Link } from "react-router-dom";
 import { SlGameController } from "react-icons/sl";
 import { FiBook } from "react-icons/fi";
+import { SpeedInsights } from "@vercel/speed-insights/react";
+import { Analytics } from "@vercel/analytics/react";
+
 const SelectGame = () => {
 	return (
 		<section>
+			<SpeedInsights />
+			<Analytics />
 			<Navbar />
 			<video
 				src={bg}
