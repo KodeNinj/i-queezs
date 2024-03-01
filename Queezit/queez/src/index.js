@@ -11,7 +11,7 @@ import PlayBoss from "./Pages/PlayBoss";
 import PlayRandom from "./Pages/PlayRandom";
 import PlayMusic from "./Pages/PlayMusic";
 import Learn from "./Pages/Learn";
-
+import { SpeedInsights } from "@vercel/speed-insights/react";
 const router = createBrowserRouter([
 	{
 		path: "/",
