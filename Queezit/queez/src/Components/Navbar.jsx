@@ -45,7 +45,7 @@ const Navbar = () => {
 			{!menuOpen ? (
 				""
 			) : (
-				<nav className="mobile flex justify-between items-center flex-col w-[50vw] h-screen bg-[var(--primaryBg)] text-slate-50 border-l-2 absolute right-0 top-0 pt-[100px] pb-[150px] z-20">
+				<nav className="mobile flex justify-between items-center flex-col w-[50vw] h-screen bg-[var(--primaryBg)] text-slate-100 border-l-2 absolute right-0 top-0 pt-[100px] pb-[150px] z-20">
 					<ul className="mobile-navs flex flex-col gap-[30px] text-[18px] p-5 z-50">
 						{NavLinks.map((e) => (
 							<Link
