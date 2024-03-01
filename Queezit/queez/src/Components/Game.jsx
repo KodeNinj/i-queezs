@@ -18,7 +18,6 @@ const Game = ({ gameLevel }) => {
 			levels[i] = levels[j];
 			temp.id = i;
 			levels[j] = temp;
-
 		}
 	}
 
@@ -59,7 +58,7 @@ const Game = ({ gameLevel }) => {
 		}
 	}
 
-	return index <= 9 ? (
+	return index <= 10 ? (
 		<div className="questionBox w-[80%] mx-[10%]  bg-[var(--secondbg)] rounded-xl p-[30px] mt-[30px] py-[100px] z-30 absolute ">
 			{levels
 				.filter((item) => item.id === index)
@@ -140,9 +139,8 @@ const Game = ({ gameLevel }) => {
 						setremark(
 							"Giving up is okay. But doing that without even trying first? That's a dick move!"
 						);
-						
+
 						shuffle();
-						
 					}}
 					className="p-[12px] md:w-[45%] w-full bg-[var(--secondary)] rounded-lg hover:bg-[var(--brownColor)] transition-color duration-[1s]">
 					Retry

@@ -16,12 +16,13 @@ const SelectGame = () => {
 				autoPlay
 				className="h-screen w-screen object-cover absolute top-0 left-0 opacity-90 "
 			/>
-			<div className="h-[70vh] w-[90vw] mx-[5vw] sm:w-[60vw] sm:mx-[20vw] mt-[5vh] pb-[60px] absolute rounded-sm z-0 flex items-center justify-center">
-				<div className="h-auto w-full text-black block absolute z-10 overflow-y-scroll overflow-x-hidden pb-[30px]">
-					<h4 className="text-[var(--secondary)] text-center mt-[10px] text-[24px] font-extrabold">
+			<div className="h-[70vh] w-[90vw] mx-[5vw] sm:w-[60vw] sm:mx-[20vw] mt-[5vh] px-[16px] absolute rounded-sm z-0 flex items-center justify-center">
+				<div className="content-box absolute  bg-white opacity-50 w-full lg:h-[60vh] h-full top-0  rounded-[5px]"></div>
+				<div className="h-full w-full text-black   z-10 overflow-y-scroll overflow-x-hidden py-[30px] ">
+					<h4 className="text-[var(--secondary)] text-center z-10  text-[24px] font-extrabold">
 						How to play
 					</h4>
-					<p className="text-center mt-[20px] mb-[30px] pb-[20px]">
+					<p className="text-center mt-[20px] z-10 mb-[30px] pb-[20px]">
 						This is a very simple quiz game. The game tests your knowledge about
 						the capitals of various countries. The countries spans across
 						different region and continent such as Africa, North America, Asia,
@@ -52,7 +53,6 @@ const SelectGame = () => {
 						</Link>
 					</div>
 				</div>
-				<div className="content-box absolute z-1 bg-white opacity-50 w-full lg:h-[60vh] h-full top-0  rounded-[5px]"></div>
 			</div>
 		</section>
 	);

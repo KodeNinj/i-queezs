@@ -13,7 +13,9 @@ const Navbar = () => {
 		<nav className="flex justify-between items-center sm:px-[40px] px-[20px] z-100">
 			{/* This is where the logo is */}
 			<div className="logo_col py-5 z-30">
-				<Link className="text-[24px] font-bold text-[var(--secondary)]" to="/">
+				<Link
+					className="text-[24px] font-bold text-[var(--secondary)]"
+					to="/">
 					i<span className="text-white">Queez</span>
 				</Link>
 			</div>
@@ -43,10 +45,12 @@ const Navbar = () => {
 			{!menuOpen ? (
 				""
 			) : (
-				<nav className="mobile flex justify-between items-center flex-col w-[50vw] h-screen bg-slate-100 absolute right-0 top-0 pt-[100px] pb-[150px] z-20">
+				<nav className="mobile flex justify-between items-center flex-col w-[50vw] h-screen bg-[var(--primaryBg)] text-slate-50 border-l-2 absolute right-0 top-0 pt-[100px] pb-[150px] z-20">
 					<ul className="mobile-navs flex flex-col gap-[30px] text-[18px] p-5 z-50">
 						{NavLinks.map((e) => (
-							<Link to={e.link} key={e.icon}>
+							<Link
+								to={e.link}
+								key={e.icon}>
 								<li
 									className="flex items-center justify-start gap-[30px] border-b-2 pb-3 "
 									key={e.text}>

@@ -5,7 +5,7 @@ import { BsTelephone } from "react-icons/bs";
 import tempData from "../Data/Tempdata.js";
 const Learn = () => {
 	const [countryDB, setcountryDB] = useState([]);
-	const [countryName, setcountryName] = useState("nigeria");
+	const [countryName, setcountryName] = useState("");
 	const [tempcontryName, settempcontryName] = useState("");
 	let values = "";
 
@@ -45,7 +45,7 @@ const Learn = () => {
 		<section className="bg-[var(--primaryBg)] min-h-screen ">
 			<Navbar />
 			{/* the middle box where the main content is */}
-			<div className="questionBox w-[90%] mx-[5%]  bg-[var(--secondbg)] rounded-xl p-[30px] lg:mt-[30px] mt-[10px] z-10 absolute h-[80vh] overflow-scroll	">
+			<div className="questionBox w-[90%] mx-[5%]  bg-[var(--secondbg)] rounded-xl p-[30px] lg:mt-[30px] mt-[10px] z-10 absolute h-[80vh] overflow-auto	">
 				{countryfilter.map((item) => {
 					// convert some multi level object to an array
 					let currencyArray = Object.values(item.currencies);
@@ -58,7 +58,9 @@ const Learn = () => {
 					let commaPopulation = population.toLocaleString("en-US");
 
 					return (
-						<section className=" " key={item.name.common}>
+						<section
+							className=" "
+							key={item.name.common}>
 							<div className="topside flex flex-col-reverse lg:flex-row md:justify-left justify-center w-full">
 								{/* top navigation with the search box */}
 								<div className="countryInfo flex lg:flex-row flex-col items-center 	 justify-left gap-5 lg:w-[50%] lg:mt-0 mt-[10%]">
@@ -202,7 +204,11 @@ const Learn = () => {
 
 			{/* The infrastructure bg */}
 			<div className="absolute z-0  bottom-0 top-[1vh] md:top-0 md:w-[100vw] w-[200vw] right-0 h-[100vh] object-fill overflow-y-hidden">
-				<img src={bg} alt="bg" className="h-[100vh]" />
+				<img
+					src={bg}
+					alt="bg"
+					className="h-[100vh]"
+				/>
 			</div>
 		</section>
 	);
