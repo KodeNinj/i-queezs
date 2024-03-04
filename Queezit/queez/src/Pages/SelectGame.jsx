@@ -46,7 +46,7 @@ const SelectGame = () => {
 							Play Game Now
 						</Link>
 						<Link
-							className="md:w-[40%] w-[90%] mt-[20px] border-[3px] border-[var(--secondary)] py-[15px] rounded-full  flex items-center text-[var(--deepBlue)] justify-center gap-3"
+							className="md:w-[40%] w-[90%] mt-[20px] border-[3px] border-[var(--deepBlue)] py-[15px] rounded-full  flex items-center text-[var(--deepBlue)] justify-center gap-3"
 							to="/learn">
 							{" "}
 							<FiBook />
