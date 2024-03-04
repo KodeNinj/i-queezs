@@ -15,7 +15,7 @@ const SelectGame = () => {
 				muted
 				loop
 				autoPlay
-				className="h-screen w-screen object-cover absolute top-0 left-0 opacity-90 "
+				className="md:h-screen h-[120vh]  w-screen object-cover absolute top-0 left-0 opacity-90 "
 			/>
 			<div className=" w-[90vw] mx-[5vw] sm:w-[60vw] sm:mx-[20vw] mt-[5vh] px-[24px] py-[32px] absolute rounded-lg z-0 flex items-center justify-center bg-white border-2 border-[var(--secondary)]">
 				{/* <div className="content-box absolute  bg-white opacity-50 w-full lg:h-[80vh]  h-full top-0  rounded-[5px]"></div> */}
