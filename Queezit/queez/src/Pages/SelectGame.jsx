@@ -17,10 +17,10 @@ const SelectGame = () => {
 				autoPlay
 				className="h-screen w-screen object-cover absolute top-0 left-0 opacity-90 "
 			/>
-			<div className="h-[70vh] w-[90vw] mx-[5vw] sm:w-[60vw] sm:mx-[20vw] mt-[5vh] px-[16px] absolute rounded-sm z-0 flex items-center justify-center">
-				<div className="content-box absolute  bg-white opacity-50 w-full lg:h-[60vh] h-full top-0  rounded-[5px]"></div>
+			<div className=" w-[90vw] mx-[5vw] sm:w-[60vw] sm:mx-[20vw] mt-[5vh] px-[24px] py-[32px] absolute rounded-lg z-0 flex items-center justify-center bg-white">
+				{/* <div className="content-box absolute  bg-white opacity-50 w-full lg:h-[80vh]  h-full top-0  rounded-[5px]"></div> */}
 				<div className="h-full w-full text-black   z-10 overflow-y-scroll overflow-x-hidden py-[30px] ">
-					<h4 className="text-[var(--secondary)] text-center z-10  text-[24px] font-extrabold">
+					<h4 className="text-[var(--deepBlue)] text-center z-10  text-[24px] font-extrabold">
 						How to play
 					</h4>
 					<p className="text-center mt-[20px] z-10 mb-[30px] pb-[20px]">
@@ -46,7 +46,7 @@ const SelectGame = () => {
 							Play Game Now
 						</Link>
 						<Link
-							className="md:w-[40%] w-[90%] mt-[20px] border-[3px] border-[var(--secondary)] py-[15px] rounded-full  flex items-center text-[var(--secondary)] justify-center gap-3"
+							className="md:w-[40%] w-[90%] mt-[20px] border-[3px] border-[var(--secondary)] py-[15px] rounded-full  flex items-center text-[var(--deepBlue)] justify-center gap-3"
 							to="/learn">
 							{" "}
 							<FiBook />
