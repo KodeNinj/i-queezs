@@ -35,7 +35,7 @@ const Navbar = () => {
 				) : (
 					<GrClose
 						size={24}
-						color="black"
+						stroke="red"
 						onClick={() => setmenuOpen(!menuOpen)}
 					/>
 				)}
