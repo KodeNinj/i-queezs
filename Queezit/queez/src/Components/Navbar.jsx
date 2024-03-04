@@ -1,7 +1,8 @@
 import { React, useState } from "react";
 import { HiMenuAlt3 } from "react-icons/hi";
 import { AiOutlineStar } from "react-icons/ai";
-import { GrClose } from "react-icons/gr";
+import { CgClose } from "react-icons/cg";
+// import { GrClose } from "react-icons/gr";
 import NavList from "./NavList";
 import NavLinks from "../Data/NavLinks";
 import { Link } from "react-router-dom";
@@ -33,9 +34,9 @@ const Navbar = () => {
 						onClick={() => setmenuOpen(!menuOpen)}
 					/>
 				) : (
-					<GrClose
-						size={24}
-						stroke="red"
+					<CgClose
+						size={32}
+						color="red"
 						onClick={() => setmenuOpen(!menuOpen)}
 					/>
 				)}
