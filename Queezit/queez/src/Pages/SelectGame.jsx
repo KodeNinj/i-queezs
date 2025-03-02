@@ -7,7 +7,7 @@ import { FiBook } from 'react-icons/fi';
 
 const SelectGame = () => {
 	return (
-		<section className='pb-5'>
+		<section className='py-[2vh]'>
 			<Navbar />
 			<video
 				src={bg}
@@ -17,7 +17,7 @@ const SelectGame = () => {
 				autoPlay
 				className='md:h-screen h-screen  fixed  w-screen object-cover  top-0 left-0 opacity-90 '
 			/>
-			<div className=' w-[90vw] mx-[5vw] sm:w-[60vw] sm:mx-[20vw] md:mt-[3vh] mt-[1vh] px-[24px] py-[32px] absolute rounded-lg z-0 flex items-center justify-center bg-white border-2 border-[var(--secondary)] '>
+			<div className=' w-[90vw] mx-[5vw] sm:w-[60vw] sm:mx-[20vw] md:mt-[3vh] mt-[1vh] px-[24px] pt-[12px] pb-[24px] absolute rounded-lg z-0 flex items-center justify-center bg-white border-2 border-[var(--secondary)] '>
 				<div className='h-full w-full text-black   z-10 overflow-y-scroll overflow-x-hidden '>
 					<h4 className='text-[var(--deepBlue)] text-center z-10  text-[24px] font-extrabold'>
 						How to play
@@ -27,12 +27,10 @@ const SelectGame = () => {
 						the capitals of various countries. The countries spans across
 						different region and continent such as Africa, North America, Asia,
 						South America, Australia and Oceania, etc. <br />
-						<br />
 						You have four game level to select from. The Baby level is the
 						easiest while Boss level is the hardest. The random Level as the
 						name implies is a mix of the three levels. And the questions are
 						more than the regular 10 questions in the first three levels. <br />
-						<br />
 						To play the game, select one of the four options to the question.
 						After the last question (10), you will be able to see your score.
 					</p>
