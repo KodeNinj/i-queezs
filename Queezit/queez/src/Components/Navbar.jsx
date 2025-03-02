@@ -31,13 +31,13 @@ const Navbar = () => {
 					<HiMenuAlt3
 						size={26}
 						color="white"
-						onClick={() => setmenuOpen(!menuOpen)}
+						onClick={() => setmenuOpen(menuOpen)}
 					/>
 				) : (
 					<CgClose
 						size={32}
 						color="red"
-						onClick={() => setmenuOpen(!menuOpen)}
+						onClick={() => setmenuOpen(menuOpen)}
 					/>
 				)}
 			</div>
