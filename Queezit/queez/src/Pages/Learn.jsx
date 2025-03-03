@@ -15,7 +15,7 @@ const Learn = () => {
 			.then((response) => response.json())
 			.then((data) => setcountryDB(data))
 			.catch((err) => console.log(err));
-		// lets
+
 	}, []);
 	// useEffect for name adjustment
 	useEffect(() => {
