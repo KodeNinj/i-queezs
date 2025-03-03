@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-const Game = ({ gameLevel }) => {
+const Game = ({ gameData }) => {
 	const [index, setindex] = useState(1);
 	const [score, setscore] = useState(0);
 	const [remark, setremark] = useState(
 		"Giving up is okay. But doing that without even trying first? That's a dick move!"
 	);
 
-	let levels = gameLevel;
+	let levels = gameData;
 
 	function shuffle() {
 		for (let i = 0; i <= levels.length - 1; i++) {
@@ -30,7 +30,7 @@ const Game = ({ gameLevel }) => {
 				);
 				break;
 			case 0:
-				setremark('Your head is quite empty. It should be used as a cupboard.');
+				setremark('Your head big and empty. It should be used as a cupboard.');
 				break;
 			case 1:
 			case 2:
@@ -59,7 +59,7 @@ const Game = ({ gameLevel }) => {
 	}
 
 	return index <= 10 ? (
-		<div className='questionBox w-[90%] mx-[5%]  bg-[var(--secondbg)] rounded-xl p-[30px]  py-[24px] z-10 absolute '>
+		<div className='questionBox absolute z-10 w-[90%] mx-[5%] '>
 			{levels
 				.filter((item) => item.id === index)
 				.map((e) => {
@@ -122,7 +122,7 @@ const Game = ({ gameLevel }) => {
 				<h2 className='text-xl text-[var(--secondary)] font-bold'>
 					Your score <br />{' '}
 					<span className='text-3xl text-white font-normal'>
-						{(score / gameLevel.length) * 100}%
+						{(score / gameData.length) * 100}%
 					</span>
 				</h2>
 				<h2 className='text-md font-bold mt-[20px] text-[var(--secondary)]'>
